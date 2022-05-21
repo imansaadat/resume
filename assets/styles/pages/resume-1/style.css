@@ -1,0 +1,46 @@
+/*
+* Color Palette
+*/
+/* resume 1 */
+/* Set Base Color */
+/* Set BG Color */
+.sidebar-resume,
+.progress-container .progressbar .progress,
+footer {
+  background-color: #2d2d2d;
+}
+
+/* Set Text Color */
+.sidebar-resume .text-icon .icon,
+.sidebar-resume .text-icon .text,
+.side-bar-list ul li,
+.footer .footer-text {
+  color: #ffffff;
+}
+
+/* Custom Style */
+.resume-1 {
+  background: url("../../../images/base/Abstract_Line_Arts_51.png") no-repeat;
+}
+.resume-1 .block-resume .sidebar-resume {
+  height: 100%;
+}
+.resume-1 .block-resume .sidebar-resume .widget-side, .resume-1 .block-resume .sidebar-resume .side-bar-list {
+  padding: 0 20px;
+}
+.resume-1 .block-resume .sidebar-resume .side-bar-list.row-list-side ul li {
+  background-color: #262626;
+}
+.resume-1 .block-resume .content-col .section-pack {
+  margin-bottom: 60px;
+}
+.resume-1 .section-pack .progress {
+  margin-bottom: 30px;
+  direction: ltr;
+}
+
+@media (max-width: 991px) {
+  .resume-1 {
+    background: none;
+  }
+}/*# sourceMappingURL=style.css.map */

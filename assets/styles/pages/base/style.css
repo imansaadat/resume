@@ -1,0 +1,346 @@
+@import "../../bootstrap.min.css";
+@import "../../normalize.css";
+/*
+* Color Palette
+*/
+/*
+* Iran Sans Fonts
+* Weight => Regular
+*/
+@import "../../font-icons/styles.css";
+@font-face {
+  font-family: Iran Sans;
+  font-weight: 300;
+  src: url("../../fonts/IRANSansWeb_UltraLight.woff") format("woff");
+}
+@font-face {
+  font-family: Iran Sans;
+  font-weight: 400;
+  src: url("../../fonts/IRANSansWeb.woff") format("woff");
+}
+/*
+* Iran Sans Fonts
+* Weight => Normal
+*/
+@font-face {
+  font-family: Iran Sans;
+  font-weight: 500;
+  src: url("../../fonts/IRANSansWeb_Medium.woff") format("woff");
+}
+/*
+* Iran Sans Fonts
+* Weight => Bold
+*/
+@font-face {
+  font-family: Iran Sans;
+  font-weight: 700;
+  src: url("../../fonts/IRANSansWeb_Bold.woff") format("woff");
+}
+/*
+* Iran Sans Fonts
+* Mode => Numeric
+* Weight => Regular
+*/
+@font-face {
+  font-family: Iran Sans Numeric;
+  font-weight: 300;
+  src: url("../../fonts/IRANSansWeb(FaNum)_UltraLight.woff") format("woff");
+}
+@font-face {
+  font-family: Iran Sans Numeric;
+  font-weight: 400;
+  src: url("../../fonts/IRANSansWeb(FaNum).woff") format("woff");
+}
+/*
+* Iran Sans Fonts
+* Mode => Numeric
+*/
+@font-face {
+  font-family: Iran Sans Numeric;
+  font-weight: 500;
+  src: url("../../fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff");
+}
+/*
+* Dast Nevis Fonts
+*/
+@font-face {
+  font-family: Dast Nevis;
+  font-weight: 400;
+  src: url("../../fonts/IRANSansDN.woff") format("woff");
+}
+@font-face {
+  font-family: Dast Nevis;
+  font-weight: 500;
+  src: url("../../fonts/IRANSansDN-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: Dast Nevis;
+  font-weight: 300;
+  src: url("../../fonts/IRANSansDN-Light.woff") format("woff");
+}
+/*
+* General Styles
+*/
+a {
+  color: #5f5f5f;
+}
+a:hover {
+  color: #5f5f5f;
+  text-decoration: none;
+}
+
+* {
+  outline: none !important;
+}
+
+input,
+textarea,
+button,
+select {
+  outline: none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 13px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Iran Sans";
+  text-align: right;
+  direction: rtl;
+  color: #5f5f5f;
+}
+
+/* Persian Numeric */
+.num-fa {
+  font-family: Iran Sans Numeric, "sans-serif";
+}
+
+/* Dast Nevis Font */
+.dast-nevis {
+  font-family: Dast Nevis;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+  direction: ltr;
+}
+
+.right {
+  text-align: right;
+}
+
+.light-mode {
+  color: #ffffff;
+}
+
+/* All Image */
+.avatar .avatar-content {
+  padding: 30px 0;
+}
+.avatar .avatar-content .image-col {
+  margin-bottom: 18px;
+}
+.avatar .avatar-content .image-col img {
+  height: auto;
+  max-width: 100%;
+}
+.avatar .avatar-content .image-col.circle img {
+  border-radius: 50%;
+}
+.avatar .avatar-content .image-col.rounded img {
+  border-radius: 10px;
+}
+.avatar .avatar-content .avatar-info .avatar-name {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.avatar .avatar-content .avatar-info .avatar-skill {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: auto;
+}
+
+/* list item */
+.list-item {
+  position: relative;
+  margin-right: 20px;
+}
+.list-item.side-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list-item.side-bar ul li {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  background-color: #ffffff;
+  width: 50%;
+  opacity: 0.9;
+}
+.list-item .title-list-item {
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+.list-item .text-job-info {
+  color: #5f5f5f;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.list-item ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.list-item ul li {
+  margin-bottom: 10px;
+  color: #5f5f5f;
+  font-size: 15px;
+  font-weight: 400;
+}
+.list-item:after {
+  content: "";
+  width: 1px;
+  height: 126px;
+  background-color: #000;
+  position: absolute;
+  bottom: 5px;
+  right: -14px;
+}
+.list-item:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #000;
+  top: 4px;
+  right: -18px;
+}
+.list-item.courses:after {
+  content: "";
+  width: 1px;
+  height: 65px;
+  background-color: #000;
+  position: absolute;
+  top: 23px;
+  right: -14px;
+}
+
+/*text-title*/
+.text-title {
+  color: #5f5f5f;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/*text-icon*/
+.text-icon {
+  margin-bottom: 15px;
+}
+.text-icon .text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+.text-icon .icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px;
+  position: relative;
+  top: 2px;
+}
+.text-icon.light-color .text {
+  color: #ffffff;
+}
+.text-icon.light-color .icon {
+  color: #ffffff;
+}
+
+/* about me */
+.about-me-text .excerpt {
+  margin: 0;
+  color: #5f5f5f;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+}
+
+/*language type*/
+.language-type {
+  color: #5f5f5f;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/*person info , contact info , social info */
+.side-bar-list {
+  margin-bottom: 40px;
+}
+.side-bar-list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.side-bar-list ul li {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+.side-bar-list ul li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.side-bar-list ul li .icon {
+  margin-left: 8px;
+}
+.side-bar-list.row-list-side {
+  padding: 0 51px 0 0px;
+}
+.side-bar-list.row-list-side ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+.side-bar-list.row-list-side ul li {
+  font-size: 13px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px 16px;
+  margin: 4px 3px 8px 3px;
+}
+
+/*footer*/
+.footer .footer-content {
+  padding: 18px 0;
+}/*# sourceMappingURL=style.css.map */

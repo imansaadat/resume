@@ -1,0 +1,326 @@
+// Library
+@import "../../bootstrap.min.css", "../../normalize.css";
+// Sass Files
+@import "../../_sass/variable";
+@import "../../_sass/mixins";
+@import "../../_sass/fonts";
+// Font Icons
+@import "../../font-icons/styles.css";
+
+
+/*
+* General Styles
+*/
+a {
+  color: $Text_Color;
+
+  &:hover {
+    color: $Text_Color;
+    text-decoration: none;
+  }
+}
+
+* {
+  outline: none !important;
+}
+
+input,
+textarea,
+button,
+select {
+  outline: none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 13px;
+  font-weight: 400;
+  @include optimize_font();
+  font-family: 'Iran Sans';
+  text-align: right;
+  direction: rtl;
+  color: $Text_Color;
+
+}
+
+/* Persian Numeric */
+.num-fa {
+  font-family: Iran Sans Numeric, 'sans-serif';
+}
+
+/* Dast Nevis Font */
+.dast-nevis {
+  font-family: Dast Nevis;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+  direction: ltr;
+}
+
+.right {
+  text-align: right;
+}
+
+.light-mode {
+  color: #ffffff;
+}
+
+/* All Image */
+.avatar {
+  .avatar-content {
+    padding: 30px 0;
+
+    .image-col {
+      margin-bottom: 18px;
+
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+
+      &.circle {
+        img {
+          border-radius: 50%;
+        }
+      }
+
+      &.rounded {
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .avatar-info {
+      .avatar-name {
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .avatar-skill {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: auto;
+}
+
+
+/* list item */
+.list-item {
+  position: relative;
+  margin-right: 20px;
+
+  &.side-bar {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        @include inline_middle();
+        color: #000;
+        background-color: #ffffff;
+        width: 50%;
+        opacity: .9;
+      }
+    }
+  }
+
+  .title-list-item {
+    margin-bottom: 8px;
+    color: $Base_Color;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .text-job-info {
+    color: $Text_Color;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 10px;
+      color: $Text_Color;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+
+  &:after {
+    content: '';
+    width: 1px;
+    height: 126px;
+    background-color: $Base_Color;
+    position: absolute;
+    bottom: 5px;
+    right: -14px;
+  }
+
+  &:before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: $Base_Color;
+    top: 4px;
+    right: -18px;
+  }
+
+  &.courses {
+    &:after {
+      content: '';
+      width: 1px;
+      height: 65px;
+      background-color: $Base_Color;
+      position: absolute;
+      top: 23px;
+      right: -14px;
+    }
+  }
+}
+
+/*text-title*/
+.text-title {
+  color: $Text_Color;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/*text-icon*/
+.text-icon {
+  margin-bottom: 15px;
+
+  .text {
+    @include inline_middle();
+    color: $Base_Color;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .icon {
+    @include inline_middle();
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+  }
+
+  &.light-color {
+    .text {
+      color: #ffffff;
+    }
+
+    .icon {
+      color: #ffffff;
+    }
+  }
+}
+
+
+/* about me */
+.about-me-text {
+  .excerpt {
+    margin: 0;
+    color: $Text_Color;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 27px;
+  }
+}
+
+
+
+
+
+/*language type*/
+.language-type {
+  color: $Text_Color;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+
+/*person info , contact info , social info */
+.side-bar-list {
+  margin-bottom: 40px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 18px;
+      span{
+        @include inline_middle();
+      }
+      .icon {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &.row-list-side {
+    padding: 0 51px 0 0px;
+
+    ul {
+      margin: 0;
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        font-size: 13px;
+        @include inline_middle();
+        padding: 4px 16px;
+        margin: 4px 3px 8px 3px;
+       
+      }
+    }
+  }
+}
+
+/*footer*/
+.footer {
+  .footer-content {
+    padding: 18px 0;
+  }
+}
+
+
+

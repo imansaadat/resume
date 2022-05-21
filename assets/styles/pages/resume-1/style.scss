@@ -1,0 +1,70 @@
+@import "../../_sass/variable";
+@import "../../_sass/mixins";
+
+/* resume 1 */
+$Base_Color: #2d2d2d;
+$Text_Color: #5f5f5f;
+$light-text:#ffffff;
+
+/* Set Base Color */
+/* Set BG Color */
+.sidebar-resume,
+.progress-container .progressbar .progress,
+footer {
+  background-color: $Base_Color;
+}
+
+/* Set Text Color */
+.sidebar-resume .text-icon .icon,
+.sidebar-resume .text-icon .text,
+.side-bar-list ul li,
+.footer .footer-text {
+  color: $light-text;
+}
+
+
+
+/* Custom Style */
+.resume-1 {
+  background: url("../../../images/base/Abstract_Line_Arts_51.png") no-repeat;
+
+  .block-resume {
+
+    .sidebar-resume {
+      height: 100%;
+
+      .widget-side,.side-bar-list {
+        padding: 0 20px;
+      }
+
+      .side-bar-list {
+        &.row-list-side {
+          ul {
+            li {
+              background-color: #262626;
+            }
+          }
+        }
+      }
+    }
+
+    .content-col {
+      .section-pack {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  .section-pack{
+    .progress{
+      margin-bottom: 30px;
+      direction:ltr;
+    }
+  }
+}
+
+
+@media (max-width:991px){
+  .resume-1 {
+    background: none;
+  }
+}
