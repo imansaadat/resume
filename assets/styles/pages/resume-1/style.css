@@ -40,6 +40,10 @@ footer {
 }
 
 @media (max-width: 991px) {
+  .container {
+    padding: 0 10px;
+  }
+
   .resume-1 {
     background: none;
   }
